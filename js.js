@@ -7,7 +7,7 @@ const recipeElement = document.getElementById('recipe');
 // Function to fetch a recipe from the backend
 async function generateRecipe(title) {
     try {
-        const response = await fetch('https://ai-recipe-generator-search.onrender.com/generate-recipe', {
+        const response = await fetch('https://ai-receipe-generator.onrender.com/generate-recipe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ title }),
