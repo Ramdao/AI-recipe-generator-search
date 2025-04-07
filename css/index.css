@@ -17,6 +17,7 @@ font-family: Inter;
 color: #1a1a1a;
 text-align: center;
 display: inline-block;
+margin-left: 37%;
 }
 .notch {
     position: relative;
@@ -89,6 +90,7 @@ display: inline-block;
 }
 
 .rectangle-div {
+    margin-left: 10%;
     margin-top: 10px;
     width: 75%;
     position: relative;
@@ -104,13 +106,15 @@ display: inline-block;
 
 .rectangle-div2 {
     display: flex;
-    margin-top: 150px;
-    width: 87%;
+    margin-top: 5%;
+    width: 35%;
     position: relative;
     box-shadow: 0px -4px 32px rgba(0, 0, 0, 0.25);
     border-radius: 24px 24px 0px 0px;
     background-color: #fff;
     height: 100px;
+    justify-content: center;
+    margin-left: 30%;
 }
 
 #switchCamera{
@@ -237,24 +241,20 @@ display: inline-block;
 
 #searchButton{
     height: 45px;
-    margin-left: 40%;
+    margin-left: 45%;
     border-radius: 5px;
     color: #fff;
     background-color: #559de1;
     border: none;
 }
 
-@media (min-width: 390px) {
+
+@media (max-width: 500px) {
     h1{
         position: absolute;
-        left: 15%;
+        right:15%;
     }
 
-    .statusbar{
-      
-
-        left: -5%;
-    }
 
     #video{
       margin-left: 15%;
@@ -269,21 +269,21 @@ display: inline-block;
 
     .rectangle-div {
         position: absolute;
-        
-        width: 90%;
+        left:-5%;
+        width: 85%;
         max-width: 600px; 
     }
     .rectangle-div2 {
         position: absolute;
-     
-        width: 95%; /* Keep elements centered and not too wide */
+        
+        width: 85%; /* Keep elements centered and not too wide */
         max-width: 600px; /* Prevent stretching on large screens */
-        top:100%;
-      
+        top:90%;
+        left: -25%;
     }
 
     .statusbar {
-        width: 110%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
