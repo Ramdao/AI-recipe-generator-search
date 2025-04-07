@@ -6,6 +6,7 @@ const recipeElement = document.getElementById('recipe');
 
 // Function to fetch a recipe from the backend
 async function fetchAndDisplayRecipe(title) {
+    recipeElement.innerHTML = "<p>Loading recipe...</p>"
     try {
         const response = await fetch('https://ai-receipe-generator.onrender.com/generate-recipe', {
             method: 'POST',
@@ -36,7 +37,7 @@ function displayRecipe(foodItem, recipeText) {
 
     // Format and display the recipe
     recipeElement.innerHTML = `
-        <h2>${title}</h2>
+        <h2> Generating Recipe for: ${foodItem}</h2>
         <h3>Ingredients:</h3>
         <ul>${ingredients.map(ing => `<li>${ing}</li>`).join("")}</ul>
         <h3>Instructions:</h3>
@@ -45,7 +46,7 @@ function displayRecipe(foodItem, recipeText) {
     `;
 
     // Add event listener to refresh button
-    document.getElementById("refreshRecipe").addEventListener("click", () => fetchAndDisplayRecipe(foodItem));
+    document.getElementById("refreshRecipe").addEventListener("click", () =>  fetchAndDisplayRecipe(foodItem));
 }
 
 // Function to handle search button click
@@ -58,7 +59,7 @@ async function handleSearch() {
     }
 
     // Fetch and display the formatted recipe
-    recipeElement.innerHTML = "<p>Loading recipe...</p>";
+    // recipeElement.innerHTML = "<p>Loading recipe...</p>";
     const recipe = await fetchAndDisplayRecipe(foodItem);
     displayRecipe(foodItem, recipe);
 }
