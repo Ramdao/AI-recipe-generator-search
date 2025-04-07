@@ -4,8 +4,40 @@ const searchButton = document.getElementById('searchButton');
 const searchInput = document.getElementById('searchInput');
 const recipeElement = document.getElementById('recipe');
 
+searchInput.placeholder = "Banana Bread";
+
+
+recipeElement.innerHTML = `<h2> Generating Recipe for: Banana Bread</h2>
+<h3>Ingredients:</h3>
+<ul>
+  <li>3 ripe bananas (mashed)</li>
+  <li>1/3 cup melted butter</li>
+  <li>3/4 cup sugar</li>
+  <li>1 egg (beaten)</li>
+  <li>1 tsp vanilla extract</li>
+  <li>1 tsp baking soda</li>
+  <li>Pinch of salt</li>
+  <li>1 1/2 cups all-purpose flour</li>
+</ul>
+
+<h3>Instructions:</h3>
+<ol>
+  <li>Preheat oven to 350°F (175°C). Grease a 4x8 inch loaf pan.</li>
+  <li>In a large bowl, mash the bananas with a fork until smooth.</li>
+  <li>Stir in the melted butter.</li>
+  <li>Mix in the sugar, egg, and vanilla extract.</li>
+  <li>Sprinkle the baking soda and salt over the mixture and mix in.</li>
+  <li>Add the flour and stir until just combined.</li>
+  <li>Pour the batter into the prepared loaf pan.</li>
+  <li>Bake for 50–60 minutes, or until a toothpick inserted into the center comes out clean.</li>
+  <li>Let it cool in the pan for a few minutes, then remove to a wire rack to cool completely.</li>
+</ol>
+        `;
+
+
 // Function to fetch a recipe from the backend
 async function fetchAndDisplayRecipe(title) {
+    searchInput.placeholder = "Enter Food Name";
     recipeElement.innerHTML = "<p>Loading recipe...</p>"
     try {
         const response = await fetch('https://ai-receipe-generator.onrender.com/generate-recipe', {
