@@ -233,7 +233,7 @@ margin-left: 37%;
 #searchInput{
    margin-top: 50px;
    border-radius: 5px;
-   width:100%;
+   width:99%;
    height: 85px;
    font-size: 20px ;
    font-family: Inter;
@@ -241,7 +241,7 @@ margin-left: 37%;
 
 #searchButton{
     height: 45px;
-    margin-left: 45%;
+    margin-left: 43%;
     border-radius: 5px;
     color: #fff;
     background-color: #559de1;
@@ -251,6 +251,7 @@ margin-left: 37%;
 
 @media (max-width: 500px) {
     h1{
+        
         position: absolute;
         right:15%;
     }
@@ -269,9 +270,10 @@ margin-left: 37%;
 
     .rectangle-div {
         position: absolute;
-        left:-5%;
+        left:-7%;
         width: 85%;
         max-width: 600px; 
+        height: 55%;
     }
     .rectangle-div2 {
         position: absolute;
@@ -345,6 +347,11 @@ margin-left: 37%;
     .nav-item div {
         font-size: 14px;
         color: #1a1a1a;
+    }
+
+    #searchInput {
+        width: 98%;
+       
     }
 }
 
