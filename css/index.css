@@ -329,7 +329,7 @@ margin-left: 37%;
     z-index: 1;
     height: 55px;
     width: 55px;
-    left: 75%;
+    left: 67%;
     top: 18%;
     border-radius: 5px;
     color: #fff;
@@ -338,7 +338,7 @@ margin-left: 37%;
     background-size: 55px 55px; /* width height */
     background-repeat: no-repeat;
     background-position: center;
-    color: transparent;    
+    background-color: transparent;    
 }
 
 
@@ -482,7 +482,7 @@ margin-left: 37%;
         top: 9%;
         width: 55px;
         height: 55px;
-        background-color: transparent;
+        
     }
 }
 
