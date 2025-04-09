@@ -365,7 +365,7 @@ margin-left: 37%;
         position: absolute;
         top:25%;
         left:5px;
-        width: 97%;
+        width: 82%;
         height: 90%;
     }
     .rectangle-div2 {
@@ -470,15 +470,15 @@ margin-left: 37%;
 
     #searchInput {
        position: absolute;
-       left: 2%;
-       width: 435px;
+       left: 1%;
+       width: 80%;
        height: 85px;
        
     }
 
     #searchButton {
         position: absolute;
-        left: 75%;
+        left: 65%;
         top: 9%;
         width: 55px;
         height: 55px;
