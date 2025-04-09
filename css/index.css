@@ -5,6 +5,55 @@ bod
     justify-content: center;
     align-items: center;
 }
+
+body{
+    background-color: #eee;
+}
+#refreshRecipe{
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    border-radius: 24px;
+    border: 2px solid #0071dc;
+    box-sizing: border-box;
+    height: 40px;
+    width: 183px;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    font-family: Inter;
+    color: #0071dc;
+    text-align: left;
+    
+}
+.restart-icon{
+    position: absolute;
+    z-index: 10;
+    width: 22px;
+    left:9rem;
+    top:0.5rem;
+}
+
+#generate{
+    display: none;
+    position: absolute;
+    top:93%;
+    left:45%;
+}
+
+#refreshRecipe:hover{
+    background-color: #ffc220;
+    cursor: pointer;
+}
+
+.scanner-style{
+    position: absolute;
+    width: 310px;
+    height: 155px;
+    left:30vw;
+    top:10%;
+}
+
 h1{
 
 width: 310px;
@@ -90,32 +139,39 @@ margin-left: 37%;
 }
 
 .rectangle-div {
-    margin-left: 10%;
-    margin-top: 10px;
-    width: 75%;
-    position: relative;
+    position: absolute;
+    top:45%;
+    left: 27vw;
     border-radius: 24px;
     background-color: #fff;
-    min-height: 360px;  
-    max-height: 80vh;   
-    overflow-y: auto;   
-    padding: 20px;      
+    width: 70vw; 
+    height: 350px;
+    overflow-y: auto;        
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 
                 0px 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .rectangle-div2 {
-    display: flex;
-    margin-top: 5%;
-    width: 35%;
-    position: relative;
-    box-shadow: 0px -4px 32px rgba(0, 0, 0, 0.25);
-    border-radius: 24px 24px 0px 0px;
+    position: absolute;
+    top:45%;
+    left: 5vw;
+    border-radius: 24px;
     background-color: #fff;
-    height: 100px;
-    justify-content: center;
-    margin-left: 30%;
+    width: 20vw; 
+    height: 350px;
+    overflow-y: auto;        
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 
+                0px 2px 6px rgba(0, 0, 0, 0.08);
 }
+
+#recipe-title{
+    position:absolute;
+    font-size: 24px;
+    top:33%;
+    left:45%;
+}
+
+
 
 #switchCamera{
     position: absolute;
@@ -138,10 +194,31 @@ margin-left: 37%;
     top:30%;
     }
 
-#video{
+    #recipe{
+        margin-left: 15px;
+        font-family: Inter;
+    }
     
-    margin-top: 30px;
-}
+    #recipe li{
+        margin-bottom: 15px;
+    }
+    
+    #recipe2{
+        margin-left: 10px;
+        font-family: Inter;
+    }
+    
+    #recipe2 li{
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+    
+    #video{
+        margin-top: 10%;
+        margin-left: 36%;
+        object-fit: cover;
+        
+    }
 
 .home {
     width: 100%;
@@ -231,21 +308,37 @@ margin-left: 37%;
 }
 
 #searchInput{
-   margin-top: 50px;
-   border-radius: 5px;
-   width:99%;
+    padding-left: 10px;
+    position: absolute;
+    left: 25%;
+    border-radius: 24px;
+    margin-top: 50px;
+    border-style: none;
+   width: 694px;
    height: 85px;
    font-size: 20px ;
    font-family: Inter;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 
+   0px 2px 6px rgba(0, 0, 0, 0.08);
+   z-index: -1;
 }
 
 #searchButton{
-    height: 45px;
-    margin-left: 43%;
+    position: absolute;
+    background-image: url(../img/Group\ 41.svg);
+    z-index: 1;
+    height: 55px;
+    width: 55px;
+    left: 75%;
+    top: 18%;
     border-radius: 5px;
     color: #fff;
     background-color: #559de1;
     border: none;
+    background-size: 55px 55px; /* width height */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;    
 }
 
 
@@ -253,7 +346,7 @@ margin-left: 37%;
     h1{
         
         position: absolute;
-        right:15%;
+        left:-25%;
     }
 
 
@@ -270,18 +363,13 @@ margin-left: 37%;
 
     .rectangle-div {
         position: absolute;
-        left:-7%;
-        width: 85%;
-        max-width: 600px; 
-        height: 55%;
+        top:25%;
+        left:5px;
+        width: 97%;
+        height: 90%;
     }
     .rectangle-div2 {
-        position: absolute;
-        
-        width: 85%; /* Keep elements centered and not too wide */
-        max-width: 600px; /* Prevent stretching on large screens */
-        top:90%;
-        left: -25%;
+        display: none ;
     }
 
     .statusbar {
@@ -295,6 +383,42 @@ margin-left: 37%;
         position: absolute;
         left:100px;
         display: block;
+        
+    }
+
+    #generate{
+        
+        position: absolute;
+        top: 21%;
+        left: 53%;
+    }
+
+    #generate button{
+        position: absolute;
+        padding: 10px;
+        background-image: url("../img/iconamoon_restart.svg");
+        background-size: 30px 30px; /* width height */
+        background-repeat: no-repeat;
+        background-position: center;
+        color: transparent;
+        z-index: 10;
+        border-radius: 10px;
+        width: 50px;
+        top:3rem;
+        left:8rem;
+    }
+
+    #generate img{
+        display: none;
+        
+     }
+
+     #recipe-title{
+        display: none;
+    }
+
+    #recipe li{
+        margin-right: 25px;
         
     }
 
@@ -320,13 +444,7 @@ margin-left: 37%;
     }
 
     /* Ensuring icons and text in the bottom navbar are stacked vertically */
-    .rectangle-div2 {
-        display: flex;
-        justify-content: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-        flex-direction: row; /* Stack items vertically */
-        padding: 10px;
-    }
+    
 
     /* Adjust individual icons and labels */
     .nav-item {
@@ -349,9 +467,21 @@ margin-left: 37%;
         color: #1a1a1a;
     }
 
+
     #searchInput {
-        width: 98%;
+       position: absolute;
+       left: 2%;
+       width: 435px;
+       height: 85px;
        
+    }
+
+    #searchButton {
+        position: absolute;
+        left: 75%;
+        top: 9%;
+        width: 55px;
+        height: 55px;
     }
 }
 
