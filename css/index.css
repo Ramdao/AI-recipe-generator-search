@@ -365,7 +365,7 @@ margin-left: 37%;
         position: absolute;
         top:25%;
         left:5px;
-        width: 95%;
+        width: 98%;
         height: 90%;
     }
     .rectangle-div2 {
@@ -478,10 +478,11 @@ margin-left: 37%;
 
     #searchButton {
         position: absolute;
-        left: 65%;
+        left: 70%;
         top: 9%;
         width: 55px;
         height: 55px;
+        background-color: transparent;
     }
 }
 
