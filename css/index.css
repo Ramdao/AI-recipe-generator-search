@@ -325,7 +325,7 @@ margin-left: 37%;
 
 #searchButton{
     position: absolute;
-    background-image: url(../img/Group\ 41.svg);
+    background-image: url(../img/Group_41.svg);
     z-index: 1;
     height: 55px;
     width: 55px;
@@ -338,7 +338,7 @@ margin-left: 37%;
     background-size: 55px 55px; /* width height */
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;    
+    
 }
 
 
