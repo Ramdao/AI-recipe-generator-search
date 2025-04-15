@@ -167,3 +167,7 @@ async function handleSearch() {
 
 // Attach event listener to search button
 searchButton.addEventListener("click", handleSearch);
+
+document.getElementById('switch').addEventListener('click', function () {
+    window.location.href = 'https://ai-receipe-generator-1.onrender.com';
+  });

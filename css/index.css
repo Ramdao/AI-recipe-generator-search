@@ -37,8 +37,8 @@ body{
 #generate{
     display: none;
     position: absolute;
-    top:93%;
-    left:45%;
+    top:70%;
+    left:80%;
 }
 
 #refreshRecipe:hover{
@@ -144,7 +144,7 @@ margin-left: 37%;
     left: 27vw;
     border-radius: 24px;
     background-color: #fff;
-    width: 70vw; 
+    width: 50vw; 
     height: 350px;
     overflow-y: auto;        
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 
@@ -341,8 +341,20 @@ margin-left: 37%;
     
 }
 
+#switch{
+    position: absolute;
+    left:45%;
+    top:95%;
+    cursor: pointer;
+}
+
 
 @media (max-width: 500px) {
+    #switch{
+        top:120%;
+        left:25%;
+
+    }
     h1{
         
         position: absolute;
